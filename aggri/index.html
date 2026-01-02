@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -12,7 +11,7 @@
             --primary: #0F1A17; 
             --accent: #E67E22;
             --gold: #D4AF37;
-            --bg: #09110F; /* Encore plus sombre pour le relief */
+            --bg: #09110F; 
         }
         body {
             font-family: 'Space Grotesk', sans-serif;
@@ -25,7 +24,6 @@
             font-family: 'Playfair Display', serif;
         }
         
-        /* Forme Losange */
         .diamond-path {
             clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
         }
@@ -37,7 +35,6 @@
             clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
         }
 
-        /* Lignes de guidage verticales */
         .guide-line {
             position: fixed;
             left: 50%;
@@ -51,25 +48,31 @@
         .writing-mode-vertical {
             writing-mode: vertical-rl;
         }
+
+        .glass {
+            background: rgba(253, 251, 247, 0.02);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
     </style>
 <script type="importmap">
 {
   "imports": {
+    "react/": "https://esm.sh/react@^19.2.3/",
     "react": "https://esm.sh/react@^19.2.3",
     "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
-    "react/": "https://esm.sh/react@^19.2.3/",
     "lucide-react": "https://esm.sh/lucide-react@^0.562.0",
     "framer-motion": "https://esm.sh/framer-motion@^12.23.26",
     "vite": "https://esm.sh/vite@^7.3.0",
-    "@vitejs/plugin-react": "https://esm.sh/@vitejs/plugin-react@^5.1.2"
+    "@vitejs/plugin-react": "https://esm.sh/@vitejs/plugin-react@^5.1.2",
+    "@google/genai": "https://esm.sh/@google/genai@^1.34.0"
   }
 }
 </script>
-<link rel="stylesheet" href="/index.css">
 </head>
 <body>
     <div class="guide-line"></div>
     <div id="root"></div>
-    <script type="module" src="/index.tsx"></script>
+    <script type="module" src="./index.tsx"></script>
 </body>
 </html>
