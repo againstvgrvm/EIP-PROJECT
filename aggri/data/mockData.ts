@@ -1,0 +1,135 @@
+
+import { Post, UserRole } from '../types.ts';
+
+export const MOCK_POSTS: Post[] = [
+  {
+    id: '1',
+    userId: 'p1',
+    userName: 'Ferme Songhaï Porto',
+    userAvatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&h=100&fit=crop',
+    role: UserRole.PRODUCTEUR,
+    contentImage: 'https://images.unsplash.com/photo-1595855759920-86582396756a?w=1000&q=80',
+    description: 'Tomates fraîches bio disponibles. Récolte du matin, calibrées et prêtes pour expédition.',
+    productType: 'Légumes',
+    location: 'Porto-Novo',
+    quantity: '500 KG',
+    likes: 342
+  },
+  {
+    id: '2',
+    userId: 'p2',
+    userName: 'Verger de Bohicon',
+    userAvatar: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop',
+    role: UserRole.PRODUCTEUR,
+    contentImage: 'https://images.unsplash.com/photo-1611080626919-7cf5a9dbab5b?w=1000&q=80',
+    description: 'Oranges douces du plateau. Idéal pour les grossistes et jus de fruits.',
+    productType: 'Fruits',
+    location: 'Bohicon',
+    quantity: '2 Tonnes',
+    likes: 856
+  },
+  {
+    id: '3',
+    userId: 'p3',
+    userName: 'Coopérative Alafia',
+    userAvatar: 'https://images.unsplash.com/photo-1544005313-94ff8a2bdf17?w=100&h=100&fit=crop',
+    role: UserRole.PRODUCTEUR,
+    contentImage: 'https://images.unsplash.com/photo-1536676356453-6ce85c72096e?w=1000&q=80',
+    description: 'Ananas Pain de Sucre. Excellence à l\'exportation ou marché local.',
+    productType: 'Fruits',
+    location: 'Allada',
+    quantity: '1.5 Tonne',
+    likes: 1205
+  },
+  {
+    id: '4',
+    userId: 'l1',
+    userName: 'Transport Rapide Agri',
+    userAvatar: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=100&h=100&fit=crop',
+    role: UserRole.LOGISTIQUE,
+    contentImage: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=1000&q=80',
+    description: 'Disponible pour transport frigorifique axe Cotonou - Parakou. Préservons la fraîcheur.',
+    productType: 'Légumes',
+    location: 'Cotonou',
+    quantity: 'Camion 5T',
+    likes: 245
+  },
+  {
+    id: '5',
+    userId: 'p4',
+    userName: 'Grenier du Nord',
+    userAvatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop',
+    role: UserRole.PRODUCTEUR,
+    contentImage: 'https://images.unsplash.com/photo-1551467009-668270590054?w=1000&q=80',
+    description: 'Maïs blanc de qualité supérieure. Séché naturellement et ensaché.',
+    productType: 'Céréales',
+    location: 'Kandi',
+    quantity: '10 Tonnes',
+    likes: 412
+  },
+  {
+    id: '6',
+    userId: 'p5',
+    userName: 'Anacarde Excellence',
+    userAvatar: 'https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?w=100&h=100&fit=crop',
+    role: UserRole.PRODUCTEUR,
+    contentImage: 'https://images.unsplash.com/photo-1596541223130-5d31a73fb6c6?w=1000&q=80',
+    description: 'Noix de cajou de premier choix. Récoltées et séchées à Djougou.',
+    productType: 'Céréales',
+    location: 'Djougou',
+    quantity: '5 Tonnes',
+    likes: 678
+  },
+  {
+    id: '7',
+    userId: 'p6',
+    userName: 'Pêcheries du Lac',
+    userAvatar: 'https://images.unsplash.com/photo-1542909168-82c3e7fdca5c?w=100&h=100&fit=crop',
+    role: UserRole.PRODUCTEUR,
+    contentImage: 'https://images.unsplash.com/photo-1524704659690-3f7a3fe19bb7?w=1000&q=80',
+    description: 'Tilapias et Poissons-chats frais. Élevage responsable en cage flottante.',
+    productType: 'Élevage',
+    location: 'Possotomé',
+    quantity: '200 KG',
+    likes: 543
+  },
+  {
+    id: '8',
+    userId: 'p7',
+    userName: 'Karité Nature',
+    userAvatar: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop',
+    role: UserRole.PRODUCTEUR,
+    contentImage: 'https://images.unsplash.com/photo-1608155686393-8fdd966d784d?w=1000&q=80',
+    description: 'Beurre de karité brut 100% naturel. Transformation artisanale traditionnelle.',
+    productType: 'Élevage',
+    location: 'Natitingou',
+    quantity: '300 KG',
+    likes: 912
+  },
+  {
+    id: '9',
+    userId: 'p8',
+    userName: 'Igname d\'Or',
+    userAvatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&h=100&fit=crop',
+    role: UserRole.PRODUCTEUR,
+    contentImage: 'https://images.unsplash.com/photo-1591871937573-74dbba515c4c?w=1000&q=80',
+    description: 'Igname Laboco de Savalou. Texture parfaite pour le pilé.',
+    productType: 'Légumes',
+    location: 'Savalou',
+    quantity: '4 Tonnes',
+    likes: 721
+  },
+  {
+    id: '10',
+    userId: 'p9',
+    userName: 'Miel de l\'Atacora',
+    userAvatar: 'https://images.unsplash.com/photo-1544005313-94ff8a2bdf17?w=100&h=100&fit=crop',
+    role: UserRole.PRODUCTEUR,
+    contentImage: 'https://images.unsplash.com/photo-1587049352846-4a222e784d38?w=1000&q=80',
+    description: 'Miel sauvage pur de la chaîne de l\'Atacora. Arôme intense de forêt.',
+    productType: 'Céréales',
+    location: 'Tanguiéta',
+    quantity: '150 Litres',
+    likes: 489
+  }
+];
