@@ -1,28 +1,28 @@
+
 {
-  "name": "agriconnect-benin",
-  "version": "3.1.0",
+  "name": "buildconnect-benin",
+  "version": "1.0.0",
   "private": true,
   "type": "module",
-  "description": "Plateforme Agricole Premium Bénin - Diamond Edition",
+  "description": "Plateforme BTP Benin - Connectivité et Excellence",
   "scripts": {
     "dev": "vite",
-    "start": "vite",
-    "build": "vite build",
-    "vercel-build": "npm install && vite build",
+    "build": "tsc && vite build",
     "preview": "vite preview"
   },
+  "author": "BuildConnect",
+  "license": "ISC",
   "dependencies": {
-    "@google/genai": "^0.21.0",
-    "framer-motion": "^12.23.26",
     "lucide-react": "^0.562.0",
     "react": "^19.2.3",
     "react-dom": "^19.2.3",
-    "vite": "^6.0.0",
-    "@vitejs/plugin-react": "^4.3.4"
+    "framer-motion": "^11.0.0"
   },
   "devDependencies": {
+    "vite": "^6.0.0",
+    "@vitejs/plugin-react": "^4.0.0",
+    "typescript": "^5.0.0",
     "@types/react": "^19.0.0",
-    "@types/react-dom": "^19.0.0",
-    "typescript": "^5.7.3"
+    "@types/react-dom": "^19.0.0"
   }
 }
